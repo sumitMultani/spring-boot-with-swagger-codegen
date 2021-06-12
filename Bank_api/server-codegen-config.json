@@ -1,0 +1,12 @@
+{
+	"groupId" : "com.example.demo",
+	"artifactId":"account-api",
+	"artifactVersion" : "0.0.0.1",
+	"basePackage" : "com.example.demo.base",
+	"apiPackage" : "com.example.demo.base.api",
+	"modelPackage" : "com.example.demo.base.model",
+	"configPackage" : "com.example.demo.base.config",
+	"serializableModel" : true,
+	"java8" : true,
+	"springBootVersion" : "2.3.6.RELEASE"
+}

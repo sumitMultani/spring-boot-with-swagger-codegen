@@ -1,0 +1,41 @@
+openapi: 3.0.0
+
+info:
+  version: 0.0.1
+  title: Bank Service
+  description: The Bank service
+
+tags:
+  - name: "Bank"
+
+paths:
+  /bank/accounts:
+    get:
+      summary: This is summary.
+      tags:
+        - "Bank"
+
+      description: This is a bank service description
+      operationId: getAllAccount
+      responses:
+        "200":
+          description: This means its ok.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Account'
+components:
+  schemas:
+    Account:
+      description: This is the account model.
+      type: object
+      properties:
+        name:
+          description: The name of account holder.
+          type: string
+        amount:
+          description: The total amount in account
+          type: string
+
